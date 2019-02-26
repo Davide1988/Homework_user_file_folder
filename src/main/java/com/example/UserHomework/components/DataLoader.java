@@ -34,14 +34,15 @@ public class DataLoader implements ApplicationRunner {
 
 
 
-        Folder folder = new Folder("Things");
-        folderRepository.save(folder);
+
 
         User user = new User("Davide");
         userRepository.save(user);
 
-        user.addFolder(folder);
-        userRepository.save(user);
+
+        Folder folder = new Folder("Things", user);
+        folderRepository.save(folder);
+
 
 
 

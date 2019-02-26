@@ -29,8 +29,7 @@ public class Folder {
     private User user;
 
 
-
-    public Folder(String name) {
+    public Folder(String name, User user) {
         this.name = name;
         this.files = new ArrayList<>();
         this.user = user;
